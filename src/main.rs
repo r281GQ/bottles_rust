@@ -4,18 +4,12 @@ fn main() {
     println!("Hello world!");
 }
 
-fn createVerse(from: i32) -> String {
-    String::from("some verse")
-}
-
-fn createVerses(from: i32, to: i32) -> String {
-    String::from("some verse")
-}
-
 #[cfg(test)]
 mod tests {
     // Note this useful idiom: importing names from outer (for mod tests) scope.
     use super::*;
+
+    use song::*;
 
     #[test]
     fn test_the_first_verse() {

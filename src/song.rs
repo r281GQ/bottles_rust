@@ -1,3 +1,11 @@
+pub fn createVerse(from: i32) -> String {
+  String::from("some verse")
+}
+
+pub fn createVerses(from: i32, to: i32) -> String {
+  String::from("some verse")
+}
+
 pub fn getLyrics() -> String {
   let whole_lyric = r#"
 99 bottles of milk on the wall, 99 bottles of milk.
