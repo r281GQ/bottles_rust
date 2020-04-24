@@ -3,7 +3,9 @@ pub fn createVerse(from: i32) -> String {
 }
 
 pub fn createVerses(from: i32, to: i32) -> String {
-  String::from("some verse")
+  let verses: Vec<String> = (from..to).map(|x| createVerse(x)).collect();
+
+  verses.join("")
 }
 
 pub fn getLyrics() -> String {
