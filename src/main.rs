@@ -2,6 +2,9 @@ mod song;
 
 fn main() {
     println!("Hello world!");
+    let d = song::createVerses(99, 98);
+
+    println!("{}", d);
 }
 
 #[cfg(test)]
@@ -41,7 +44,7 @@ mod tests {
         verse.push_str("Take one down and pass it around, ");
         verse.push_str("1 bottle of milk on the wall.\n");
 
-        assert_eq!(verse, createVerse(3));
+        assert_eq!(verse, createVerse(2));
     }
 
     #[test]
@@ -49,10 +52,10 @@ mod tests {
         let mut verse = String::from("1 bottle of milk on the wall, ");
 
         verse.push_str("1 bottle of milk.\n");
-        verse.push_str("Take one down and pass it around, ");
+        verse.push_str("Take it down and pass it around, ");
         verse.push_str("no more bottles of milk on the wall.\n");
 
-        assert_eq!(verse, createVerse(3));
+        assert_eq!(verse, createVerse(1));
     }
 
     #[test]
@@ -63,7 +66,7 @@ mod tests {
         verse.push_str("Go to the store and buy some more, ");
         verse.push_str("99 bottles of milk on the wall.\n");
 
-        assert_eq!(verse, createVerse(3));
+        assert_eq!(verse, createVerse(0));
     }
 
     #[test]
@@ -72,9 +75,7 @@ mod tests {
 
         verse.push_str("99 bottles of milk.\n");
         verse.push_str("Take one down and pass it around, ");
-        verse.push_str("98 bottles of milk on the wall.\n");
-
-        verse.push_str("\n");
+        verse.push_str("98 bottles of milk on the wall.\n ");
 
         verse.push_str("98 bottles of milk on the wall, ");
         verse.push_str("98 bottles of milk.\n");
@@ -90,16 +91,14 @@ mod tests {
 
         verse.push_str("2 bottles of milk.\n");
         verse.push_str("Take one down and pass it around, ");
-        verse.push_str("1 bottle of milk on the wall.\n");
-
-        verse.push_str("\n");
+        verse.push_str("1 bottle of milk on the wall.\n ");
 
         verse.push_str("1 bottle of milk on the wall, ");
         verse.push_str("1 bottle of milk.\n");
-        verse.push_str("Take one down and pass it around, ");
-        verse.push_str("no more bottles of milk on the wall.\n");
+        verse.push_str("Take it down and pass it around, ");
+        verse.push_str("no more bottles of milk on the wall.\n ");
 
-        verse.push_str("\n");
+        // verse.push_str("\n");
 
         verse.push_str("No more bottles of milk on the wall, ");
 
