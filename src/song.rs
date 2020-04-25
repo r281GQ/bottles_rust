@@ -1,4 +1,4 @@
-pub fn createVerse(from: i32) -> String {
+pub fn create_verse(from: i32) -> String {
   let lyric = match from {
     0 => String::from(
       "No more bottles of milk on the wall, no more bottles of milk.
@@ -24,13 +24,13 @@ Take one down and pass it around, {} bottles of milk on the wall.\n",
   return lyric;
 }
 
-pub fn createVerses(from: i32, to: i32) -> String {
-  let verses: Vec<String> = (to..from + 1).map(createVerse).rev().collect();
+pub fn create_verses(from: i32, to: i32) -> String {
+  let verses: Vec<String> = (to..from + 1).map(create_verse).rev().collect();
 
   verses.join("")
 }
 
-pub fn getLyrics() -> String {
+pub fn get_lyrics() -> String {
   let whole_lyric = r#"99 bottles of milk on the wall, 99 bottles of milk.
 Take one down and pass it around, 98 bottles of milk on the wall.
 98 bottles of milk on the wall, 98 bottles of milk.

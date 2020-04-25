@@ -2,7 +2,7 @@ mod song;
 
 fn main() {
     println!("Hello world!");
-    let d = song::createVerses(99, 98);
+    let d = song::create_verses(99, 98);
 
     println!("{}", d);
 }
@@ -22,7 +22,7 @@ mod tests {
         verse.push_str("Take one down and pass it around, ");
         verse.push_str("98 bottles of milk on the wall.\n");
 
-        assert_eq!(verse, createVerse(99));
+        assert_eq!(verse, create_verse(99));
     }
 
     #[test]
@@ -33,7 +33,7 @@ mod tests {
         verse.push_str("Take one down and pass it around, ");
         verse.push_str("2 bottles of milk on the wall.\n");
 
-        assert_eq!(verse, createVerse(3));
+        assert_eq!(verse, create_verse(3));
     }
 
     #[test]
@@ -44,7 +44,7 @@ mod tests {
         verse.push_str("Take one down and pass it around, ");
         verse.push_str("1 bottle of milk on the wall.\n");
 
-        assert_eq!(verse, createVerse(2));
+        assert_eq!(verse, create_verse(2));
     }
 
     #[test]
@@ -55,7 +55,7 @@ mod tests {
         verse.push_str("Take it down and pass it around, ");
         verse.push_str("no more bottles of milk on the wall.\n");
 
-        assert_eq!(verse, createVerse(1));
+        assert_eq!(verse, create_verse(1));
     }
 
     #[test]
@@ -66,7 +66,7 @@ mod tests {
         verse.push_str("Go to the store and buy some more, ");
         verse.push_str("99 bottles of milk on the wall.\n");
 
-        assert_eq!(verse, createVerse(0));
+        assert_eq!(verse, create_verse(0));
     }
 
     #[test]
@@ -82,7 +82,7 @@ mod tests {
         verse.push_str("Take one down and pass it around, ");
         verse.push_str("97 bottles of milk on the wall.\n");
 
-        assert_eq!(verse, createVerses(99, 98));
+        assert_eq!(verse, create_verses(99, 98));
     }
 
     #[test]
@@ -106,11 +106,11 @@ mod tests {
         verse.push_str("Go to the store and buy some more, ");
         verse.push_str("99 bottles of milk on the wall.\n");
 
-        assert_eq!(verse, createVerses(2, 0));
+        assert_eq!(verse, create_verses(2, 0));
     }
 
     #[test]
     fn test_the_whole_song() {
-        assert_eq!(song::getLyrics(), createVerses(99, 0));
+        assert_eq!(song::get_lyrics(), create_verses(99, 0));
     }
 }
