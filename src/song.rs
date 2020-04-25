@@ -27,77 +27,54 @@ Take one down and pass it around, {} bottles of milk on the wall.\n",
 pub fn createVerses(from: i32, to: i32) -> String {
   let verses: Vec<String> = (to..from + 1).map(createVerse).rev().collect();
 
-  verses.join(" ")
+  verses.join("")
 }
 
 pub fn getLyrics() -> String {
-  let whole_lyric = r#"
-99 bottles of milk on the wall, 99 bottles of milk.
+  let whole_lyric = r#"99 bottles of milk on the wall, 99 bottles of milk.
 Take one down and pass it around, 98 bottles of milk on the wall.
-
 98 bottles of milk on the wall, 98 bottles of milk.
 Take one down and pass it around, 97 bottles of milk on the wall.
-
 97 bottles of milk on the wall, 97 bottles of milk.
 Take one down and pass it around, 96 bottles of milk on the wall.
-
 96 bottles of milk on the wall, 96 bottles of milk.
 Take one down and pass it around, 95 bottles of milk on the wall.
-
 95 bottles of milk on the wall, 95 bottles of milk.
 Take one down and pass it around, 94 bottles of milk on the wall.
-
 94 bottles of milk on the wall, 94 bottles of milk.
 Take one down and pass it around, 93 bottles of milk on the wall.
-
 93 bottles of milk on the wall, 93 bottles of milk.
 Take one down and pass it around, 92 bottles of milk on the wall.
-
 92 bottles of milk on the wall, 92 bottles of milk.
 Take one down and pass it around, 91 bottles of milk on the wall.
-
 91 bottles of milk on the wall, 91 bottles of milk.
 Take one down and pass it around, 90 bottles of milk on the wall.
-
 90 bottles of milk on the wall, 90 bottles of milk.
 Take one down and pass it around, 89 bottles of milk on the wall.
-
 89 bottles of milk on the wall, 89 bottles of milk.
 Take one down and pass it around, 88 bottles of milk on the wall.
-
 88 bottles of milk on the wall, 88 bottles of milk.
 Take one down and pass it around, 87 bottles of milk on the wall.
-
 87 bottles of milk on the wall, 87 bottles of milk.
 Take one down and pass it around, 86 bottles of milk on the wall.
-
 86 bottles of milk on the wall, 86 bottles of milk.
 Take one down and pass it around, 85 bottles of milk on the wall.
-
 85 bottles of milk on the wall, 85 bottles of milk.
 Take one down and pass it around, 84 bottles of milk on the wall.
-
 84 bottles of milk on the wall, 84 bottles of milk.
 Take one down and pass it around, 83 bottles of milk on the wall.
-
 83 bottles of milk on the wall, 83 bottles of milk.
 Take one down and pass it around, 82 bottles of milk on the wall.
-
 82 bottles of milk on the wall, 82 bottles of milk.
 Take one down and pass it around, 81 bottles of milk on the wall.
-
 81 bottles of milk on the wall, 81 bottles of milk.
 Take one down and pass it around, 80 bottles of milk on the wall.
-
 80 bottles of milk on the wall, 80 bottles of milk.
 Take one down and pass it around, 79 bottles of milk on the wall.
-
 79 bottles of milk on the wall, 79 bottles of milk.
 Take one down and pass it around, 78 bottles of milk on the wall.
-
 78 bottles of milk on the wall, 78 bottles of milk.
 Take one down and pass it around, 77 bottles of milk on the wall.
-
 77 bottles of milk on the wall, 77 bottles of milk.
 Take one down and pass it around, 76 bottles of milk on the wall.
 76 bottles of milk on the wall, 76 bottles of milk.
@@ -228,43 +205,30 @@ Take one down and pass it around, 14 bottles of milk on the wall.
 Take one down and pass it around, 13 bottles of milk on the wall.
 13 bottles of milk on the wall, 13 bottles of milk.
 Take one down and pass it around, 12 bottles of milk on the wall.
-
 12 bottles of milk on the wall, 12 bottles of milk.
 Take one down and pass it around, 11 bottles of milk on the wall.
-
 11 bottles of milk on the wall, 11 bottles of milk.
 Take one down and pass it around, 10 bottles of milk on the wall.
-
 10 bottles of milk on the wall, 10 bottles of milk.
 Take one down and pass it around, 9 bottles of milk on the wall.
-
 9 bottles of milk on the wall, 9 bottles of milk.
 Take one down and pass it around, 8 bottles of milk on the wall.
-
 8 bottles of milk on the wall, 8 bottles of milk.
 Take one down and pass it around, 7 bottles of milk on the wall.
-
 7 bottles of milk on the wall, 7 bottles of milk.
 Take one down and pass it around, 6 bottles of milk on the wall.
-
 6 bottles of milk on the wall, 6 bottles of milk.
 Take one down and pass it around, 5 bottles of milk on the wall.
-
 5 bottles of milk on the wall, 5 bottles of milk.
 Take one down and pass it around, 4 bottles of milk on the wall.
-
 4 bottles of milk on the wall, 4 bottles of milk.
 Take one down and pass it around, 3 bottles of milk on the wall.
-
 3 bottles of milk on the wall, 3 bottles of milk.
 Take one down and pass it around, 2 bottles of milk on the wall.
-
 2 bottles of milk on the wall, 2 bottles of milk.
 Take one down and pass it around, 1 bottle of milk on the wall.
-
 1 bottle of milk on the wall, 1 bottle of milk.
 Take it down and pass it around, no more bottles of milk on the wall.
-
 No more bottles of milk on the wall, no more bottles of milk.
 Go to the store and buy some more, 99 bottles of milk on the wall.
 "#;

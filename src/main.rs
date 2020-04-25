@@ -75,7 +75,7 @@ mod tests {
 
         verse.push_str("99 bottles of milk.\n");
         verse.push_str("Take one down and pass it around, ");
-        verse.push_str("98 bottles of milk on the wall.\n ");
+        verse.push_str("98 bottles of milk on the wall.\n");
 
         verse.push_str("98 bottles of milk on the wall, ");
         verse.push_str("98 bottles of milk.\n");
@@ -91,12 +91,12 @@ mod tests {
 
         verse.push_str("2 bottles of milk.\n");
         verse.push_str("Take one down and pass it around, ");
-        verse.push_str("1 bottle of milk on the wall.\n ");
+        verse.push_str("1 bottle of milk on the wall.\n");
 
         verse.push_str("1 bottle of milk on the wall, ");
         verse.push_str("1 bottle of milk.\n");
         verse.push_str("Take it down and pass it around, ");
-        verse.push_str("no more bottles of milk on the wall.\n ");
+        verse.push_str("no more bottles of milk on the wall.\n");
 
         // verse.push_str("\n");
 
