@@ -2,9 +2,6 @@ mod song;
 
 fn main() {
     println!("Hello world!");
-    let d = song::create_verses(99, 98);
-
-    println!("{}", d);
 }
 
 #[cfg(test)]
@@ -97,8 +94,6 @@ mod tests {
         verse.push_str("1 bottle of milk.\n");
         verse.push_str("Take it down and pass it around, ");
         verse.push_str("no more bottles of milk on the wall.\n");
-
-        // verse.push_str("\n");
 
         verse.push_str("No more bottles of milk on the wall, ");
 
