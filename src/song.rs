@@ -12,6 +12,13 @@ Take it down and pass it around, no more bottles of milk on the wall.\n",
       "2 bottles of milk on the wall, 2 bottles of milk.
 Take one down and pass it around, 1 bottle of milk on the wall.\n",
     ),
+    _ if from % 6 == 0 => format!(
+      "{} bottles of milk on the wall, {} bottles of milk.
+Take one down and pass it around, {} bottles of milk on the wall.\n",
+      from,
+      from,
+      from - 1
+    ),
     _ => format!(
       "{} bottles of milk on the wall, {} bottles of milk.
 Take one down and pass it around, {} bottles of milk on the wall.\n",
