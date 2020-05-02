@@ -2,6 +2,9 @@ mod song;
 
 fn main() {
     println!("Hello world!");
+
+    song::create_verse(3);
+    song::create_verses(99, 95);
 }
 
 #[cfg(test)]
